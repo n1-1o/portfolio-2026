@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nguyen Tran-Ngo Portfolio 2026
+
+Personal portfolio built with Next.js, Tailwind CSS, and Framer Motion.
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS
+- **Typography**: Inter (sans-serif) + Alice (serif)
+- **Animations**: Framer Motion (coming soon)
+- **Content**: MDX for writing section (coming soon)
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+portfolio-2026/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Homepage
+│   └── globals.css        # Global styles
+├── components/
+│   ├── layout/            # Layout components (Header, Footer, Container)
+│   ├── ui/                # Reusable UI components (Button, Card, Badge)
+│   └── sections/          # Page sections (Hero, WorkSection, etc.)
+├── content/               # Content data (projects, testimonials, articles)
+├── lib/                   # Utilities and helpers
+└── tailwind.config.ts     # Tailwind configuration
+```
 
-## Learn More
+## Design System
 
-To learn more about Next.js, take a look at the following resources:
+### Colors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Primary**: `#383838` (dark gray for text)
+- **Interactive**: `#0000EE` (blue for links/CTAs)
+- **Backgrounds**: White + light grays
+- **Success**: `#009C10` (green)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Typography
 
-## Deploy on Vercel
+- **H1**: 56px Alice serif
+- **H2**: 24px Alice serif
+- **Body**: 16px Inter sans-serif
+- **Labels**: 20px Inter sans-serif
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Spacing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Section padding**: 80-160px
+- **Component gap**: 16px (primary), 32px (sections)
+
+## Development
+
+### Available Scripts
+
+```bash
+npm run dev      # Development server
+npm run build    # Build for production
+npm run start    # Production server
+npm run lint     # Run ESLint
+```
+
+## Deployment
+
+This site is deployed to Vercel. Pushes to `main` branch trigger automatic deployments.
+
+**Production URL**: https://nguyentran-ngo.design
+
+## Future Features
+
+- [ ] RPG game mode toggle (16-bit pixel art style)
+- [ ] AI chatbot integration
+- [ ] MDX writing section
+- [ ] Individual project pages
+- [ ] Animations with Framer Motion
+
+## License
+
+© 2026 Nguyen Tran-Ngo. All rights reserved.
