@@ -1,26 +1,67 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Alice&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  // Colors
+  --color-primary: #383838;
+  --color-primary-light: #5E5E5E;
+  --color-primary-muted: #757575;
+  --color-interactive: #0000EE;
+  --color-interactive-success: #009C10;
+  --color-background: #FFFFFF;
+  --color-background-secondary: #EBEFF2;
+  --color-background-light: #F5F5F5;
+  --color-background-accent: #D4E6FF;
+  --color-background-success: #CFF7D3;
+  
+  // Typography
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Alice', serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-family-sans: var(--font-sans);
+  --font-family-serif: var(--font-serif);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Typography defaults
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 56px;
+  color: var(--color-primary);
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--color-primary-light);
+}
+
+h6 {
+  font-size: 20px;
+  font-family: var(--font-sans);
+  color: var(--color-primary);
+}
+
+// Link styles
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: var(--color-interactive);
+  }
 }
