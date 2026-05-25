@@ -32,8 +32,8 @@ export const workProjects: Project[] = [
     title: 'Thales - Quantum',
     company: 'Thales',
     type: ['B2B', 'Web Design', 'Design System'],
-    description: 'Working with Thales\\' in-house design team to create Thales\\' first Design System Platform',
-    impact: 'A Single Source of Truth for Thales\\' design language, paving the way for the company\\'s digital transformation.',
+    description: 'Working with Thales\' in-house design team to create Thales\' first Design System Platform',
+    impact: 'A Single Source of Truth for Thales\' design language, paving the way for the company\'s digital transformation.',
   },
   {
     slug: 'google',
@@ -41,7 +41,7 @@ export const workProjects: Project[] = [
     company: 'Google',
     type: ['B2C', 'Web Design', 'Edutech'],
     description: 'Built & launched Doodle4Google in Vietnam',
-    impact: 'Built Doodle4Google\\'s first educative hub in Vietnam. Inspired 3500 kids to draw and submit their dreams to Google homepage\\'s doodle.',
+    impact: 'Built Doodle4Google\'s first educative hub in Vietnam. Inspired 3500 kids to draw and submit their dreams to Google homepage\'s doodle.',
   },
 ]
 

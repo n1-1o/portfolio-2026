@@ -17,7 +17,7 @@ export const articles: Article[] = [
     slug: 'ai-prototyping-playbook',
     title: 'An AI-assisted prototyping playbook',
     category: 'Playbook',
-    excerpt: 'AI prototyping isn\\'t magic—it\\'s a playbook. Frame problems, craft prompts, iterate fast. Structure makes speed stick.',
+    excerpt: 'AI prototyping isn\'t magic—it\'s a playbook. Frame problems, craft prompts, iterate fast. Structure makes speed stick.',
   },
   {
     slug: 'curators-before-creators',
