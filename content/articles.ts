@@ -23,7 +23,7 @@ export const articles: Article[] = [
     slug: 'curators-before-creators',
     title: 'Curators before creators: Why designers need a Problem-first mindset',
     category: 'Reflection',
-    excerpt: 'Design isn't just polish — it's purpose. Shift from executor to curator by focusing on the right problems and make real impacts.',
+    excerpt: 'Design isn\\'t just polish — it\\'s purpose. Shift from executor to curator by focusing on the right problems and make real impacts.',
   },
   {
     slug: 'can-design-be-explained-with-art',
