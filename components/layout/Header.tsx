@@ -5,9 +5,9 @@ import Link from 'next/link'
 import { Container } from './Container'
 
 const navItems = [
-  { href: '/#work', label: 'Work' },
-  { href: '/#play', label: 'Play' },
-  { href: '/#writing', label: 'Writing' },
+  { href: '/work', label: 'Work' },
+  { href: '/play', label: 'Play' },
+  { href: '/writing', label: 'Writing' },
 ]
 
 export function Header() {

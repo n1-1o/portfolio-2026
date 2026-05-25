@@ -1,26 +1,13 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
+import Link from 'next/link'
 import { Container } from '../layout/Container'
 import { Card } from '../ui/Card'
 import { Badge } from '../ui/Badge'
 import { workProjects, playProjects, type Project } from '@/content/projects'
 
-const audienceFilters = [
-  { id: 'all', label: 'For anyone' },
-  { id: 'recruiters', label: 'Recruiters' },
-  { id: 'designers', label: 'Designers' },
-  { id: 'pm', label: 'Product Managers' },
-  { id: 'engineers', label: 'Engineers' },
-]
-
 export function WorkSection() {
-  const [activeFilter, setActiveFilter] = useState('all')
-
-  // For now, show all projects. Later we can filter by audience
-  const filteredWork = workProjects
-  const filteredPlay = playProjects
-
   return (
     <Container>
       {/* Work Section */}
@@ -28,8 +15,10 @@ export function WorkSection() {
         <h2 className="mb-[32px]">Work</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px]">
-          {filteredWork.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+          {workProjects.map((project) => (
+            <Link key={project.slug} href={`/work/${project.slug}`} className="block">
+              <ProjectCard project={project} />
+            </Link>
           ))}
         </div>
       </section>
@@ -39,8 +28,10 @@ export function WorkSection() {
         <h2 className="mb-[32px]">Play</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px]">
-          {filteredPlay.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+          {playProjects.map((project) => (
+            <Link key={project.slug} href={`/play/${project.slug}`} className="block">
+              <ProjectCard project={project} />
+            </Link>
           ))}
         </div>
       </section>
