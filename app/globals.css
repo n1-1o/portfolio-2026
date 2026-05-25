@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Alice&display=swap');
 
 :root {
-  // Colors
+  /* Colors */
   --color-primary: #383838;
   --color-primary-light: #5E5E5E;
   --color-primary-muted: #757575;
@@ -14,7 +14,7 @@
   --color-background-accent: #D4E6FF;
   --color-background-success: #CFF7D3;
   
-  // Typography
+  /* Typography */
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Alice', serif;
 }
@@ -32,7 +32,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// Typography defaults
+/* Typography defaults */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
   font-weight: 400;
@@ -55,13 +55,13 @@ h6 {
   color: var(--color-primary);
 }
 
-// Link styles
+/* Link styles */
 a {
   color: var(--color-primary);
   text-decoration: none;
   transition: color 0.2s ease;
-  
-  &:hover {
-    color: var(--color-interactive);
-  }
+}
+
+a:hover {
+  color: var(--color-interactive);
 }
