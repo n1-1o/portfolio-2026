@@ -4,11 +4,13 @@ import { Badge } from '@/components/ui/Badge'
 import { articles } from '@/content/articles'
 
 interface ArticlePageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export default function ArticlePage({ params }: ArticlePageProps) {
-  const article = articles.find(a => a.slug === params.slug)
+export default async function ArticlePage({ params }: ArticlePageProps) {
+  const { slug } = await params
+  
+  const article = articles.find(a => a.slug === slug)
 
   if (!article) {
     return (

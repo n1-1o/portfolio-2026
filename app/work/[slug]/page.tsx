@@ -4,18 +4,29 @@ import { Badge } from '@/components/ui/Badge'
 import { workProjects, playProjects, type Project } from '@/content/projects'
 
 interface ProjectPageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = workProjects.find(p => p.slug === params.slug) || 
-                  playProjects.find(p => p.slug === params.slug)
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params
+  
+  // Debug log
+  console.log('ProjectPage slug:', slug)
+  console.log('Available workProjects slugs:', workProjects.map(p => p.slug))
+  
+  const project = workProjects.find(p => p.slug === slug) || 
+                  playProjects.find(p => p.slug === slug)
+
+  console.log('Found project:', project?.title || 'NOT FOUND')
 
   if (!project) {
     return (
       <Container>
         <div className="py-section-md">
           <h1>Project not found</h1>
+          <p className="mt-[16px] text-primary-muted">
+            Looking for: {slug}
+          </p>
         </div>
       </Container>
     )
