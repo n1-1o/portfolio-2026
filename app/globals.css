@@ -1,8 +1,8 @@
 @import "tailwindcss";
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Alice&display=swap');
 
-:root {
-  /* Colors */
+@theme inline {
   --color-primary: #383838;
   --color-primary-light: #5E5E5E;
   --color-primary-muted: #757575;
@@ -14,14 +14,8 @@
   --color-background-accent: #D4E6FF;
   --color-background-success: #CFF7D3;
   
-  /* Typography */
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Alice', serif;
-}
-
-@theme inline {
-  --font-family-sans: var(--font-sans);
-  --font-family-serif: var(--font-serif);
 }
 
 body {
