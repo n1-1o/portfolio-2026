@@ -1,0 +1,22 @@
+{
+  "name": "Nguyen Tran-Ngo Portfolio",
+  "short_name": "NTN Portfolio",
+  "description": "Portfolio of Nguyen Tran-Ngo, a senior product designer at Scaleway building European AI & Cloud technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

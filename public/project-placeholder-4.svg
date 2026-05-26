@@ -1,0 +1,5 @@
+<svg width="400" height="225" viewBox="0 0 400 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="225" fill="#FEF3C7"/>
+  <rect x="20" y="20" width="360" height="185" rx="4" fill="#FDE68A"/>
+  <text x="200" y="120" text-anchor="middle" fill="#92400E" font-family="system-ui" font-size="16" font-weight="500">Project Preview</text>
+</svg>
